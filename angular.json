@@ -32,6 +32,7 @@
               "node_modules/angular-bootstrap-md/package.json"
             ],
             "scripts": [
+
               "node_modules/jquery/dist/jquery.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
               "node_modules/materialize-css/dist/js/materialize.js"
@@ -132,10 +133,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "Caipaangular",
-  "cli": {
-    "analytics": "bfb5fd66-a16d-4f2a-95d5-ab0a147cb1e9"
-  }
+    }},
+  "defaultProject": "Caipaangular"
 }

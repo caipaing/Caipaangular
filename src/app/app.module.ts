@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +17,9 @@ import { environment } from '../environments/environment';
 import { ProductosService } from '../app/service/productos.service';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MDBBootstrapModule} from 'angular-bootstrap-md';
+import { from } from 'rxjs';
 
 
 @NgModule({
@@ -37,6 +40,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AngularFireModule,
     AngularFireDatabaseModule,
     AngularFirestoreModule,
+    FontAwesomeModule,
+    MDBBootstrapModule,
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule
   ],
