@@ -1,0 +1,52 @@
+
+<div class="card mt-10" >
+  <div class="card-body">Cotizador De Vista Previa
+      <form #cotizaForm="ngForm" (ngsubmit)="onSubmit(cotizaForm)">
+          <div class="form-grup">
+              <input type="text"
+              class="form-control"
+              name="producto"
+              #producto="ngModel"
+              [(ngModel)]= "ServicioService.selectcotizar.producto"
+              placeholder="Ingrese producto a cotizar"
+              >
+          </div>
+          <div class="form-grup">
+            <input type="text"
+            class="form-control"
+            name="descripcion"
+            #descripcion="ngModel"
+            [(ngModel)]= "ServicioService.selectcotizar.descripcion"
+            placeholder="Ingrese la descripcion"
+            >
+        </div>
+        <div class="form-grup">
+          <input type="text"
+          class="form-control"
+          name="cantidad"
+          #cantidad="ngModel"
+          [(ngModel)]= "ServicioService.selectcotizar.cantidad"
+          placeholder="Ingrese la cantidad"
+          >
+      </div>
+      <div class="form-grup">
+        <input type="text"
+        class="form-control"
+        name="calcular"
+        #calcular="ngModel"
+        [(ngModel)]= "ServicioService.selectcotizar.calcular"
+        >
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary"  type="submit">
+          <i class="fas fa-plus-circle"></i>Enviar
+      </button>
+  </div>
+  <div class="form-group">
+      <button class="btn btn-primary"  type="reset">
+          <i class="fas fa-sync-alt"></i>reset
+      </button>
+  </div>
+      </form>
+  </div>
+</div>
