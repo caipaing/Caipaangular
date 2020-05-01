@@ -15,6 +15,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { ProductosService } from '../app/service/productos.service';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ProductosService } from '../app/service/productos.service';
     DevproductosComponent,
     ProductosComponent,
     ContactoComponent,
-    AdministradorComponent
+    AdministradorComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
