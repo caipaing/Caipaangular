@@ -2,6 +2,7 @@
 <div class="card mt-10" >
   <div class="card-body">Cotizador De Vista Previa
       <form #cotizaForm="ngForm" (ngsubmit)="onSubmit(cotizaForm)">
+        <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="ServicioService.selectproduct.$key">
           <div class="form-grup">
               <input type="text"
               class="form-control"

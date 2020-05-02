@@ -1,6 +1,7 @@
 <div class="card mt-5">
   <div class="card-body">Servicios Que Se Prestan
       <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+        <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="ServicioService.selectproduct.$key">
           <div class="form-grup">
               <input type="text"
               class="form-control"
@@ -30,12 +31,12 @@
           </div>
           <div class="form-group">
               <button class="btn btn-primary"  type="submit">
-                  <i class="fas fa-plus-circle"></i>Enviar
+                  <i class="fa fa-plus-circle"></i>Enviar
               </button>
           </div>
           <div class="form-group">
               <button class="btn btn-primary"  type="reset">
-                  <i class="fas fa-sync-alt"></i>reset
+                  <i class="fa fa-sync-alt"></i>reset
               </button>
           </div>
       </form>

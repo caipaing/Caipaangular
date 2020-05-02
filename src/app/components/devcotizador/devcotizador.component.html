@@ -15,6 +15,12 @@
           <td>{{Productos.name}}</td>
           <td>{{Productos.descripcion}}</td>
           <td>{{Productos.precio}}</td>
+          <a class="btn btn-secondary text-white" (click)="onEdit(Productos)">
+            <i class="fa fa-edit" aria-hidden="true"></i>
+          </a>
+          <a  class="btn btn-danger text-white" (click)="onDelete(Productos.$key)" href="#">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </a>
 
         </tr>
 

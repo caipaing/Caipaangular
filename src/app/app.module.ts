@@ -20,6 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MDBBootstrapModule} from 'angular-bootstrap-md';
 import { from } from 'rxjs';
+import { CatalogoComponent } from './components/catalogo/catalogo.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { from } from 'rxjs';
     ContactoComponent,
     AdministradorComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,

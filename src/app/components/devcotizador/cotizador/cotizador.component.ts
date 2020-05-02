@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { cotizador } from 'src/app/productos/productos';
+import { ProductosComponent } from 'src/app/components/devproductos/productos/productos.component'
 import { ProductosService } from 'src/app/service/productos.service';
 import { from } from 'rxjs';
 
@@ -12,6 +13,8 @@ import { from } from 'rxjs';
 })
 export class CotizadorComponent implements OnInit {
 
+  productform: ProductosComponent;
+
   constructor(public ServicioService: ProductosService) { }
 
   ngOnInit() {
@@ -20,6 +23,7 @@ export class CotizadorComponent implements OnInit {
   }
 
   onSubmit(cotizaForm: NgForm) {
+    if (this.productform.ngOnInit == null)
     this.ServicioService.insertCotizador(cotizaForm.value);
     this.resetForm(cotizaForm);
   }

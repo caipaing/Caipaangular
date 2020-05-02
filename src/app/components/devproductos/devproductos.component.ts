@@ -10,22 +10,31 @@ import { ProductosService } from 'src/app/service/productos.service';
 export class DevproductosComponent implements OnInit {
 
   Servicios: Productos[];
-  Cotizador: cotizador[];
+
 
 
   constructor(public servicioService: ProductosService) { }
 
   ngOnInit() {
     this.servicioService.getProduct()
-    .snapshotChanges()
-    .subscribe(item => {
-      this.Servicios = [];
-      item.forEach(element => {
-        let ver = element.payload.toJSON();
-        ver['$key'] = element.key;
-        this.Servicios.push(ver as Productos );
+      .snapshotChanges()
+      .subscribe(item => {
+        this.Servicios = [];
+        item.forEach(element => {
+          let ver = element.payload.toJSON();
+          ver['$key'] = element.key;
+          this.Servicios.push(ver as Productos);
+        });
       });
-    });
+
+
+  }
+
+  onEdit(Productos: Productos){
+    this.servicioService.selectproduct = Object.assign({}, Productos);
+  }
+
+  onDelete($key: string){
 
   }
 

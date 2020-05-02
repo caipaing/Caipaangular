@@ -28,4 +28,13 @@ export class DevcotizadorComponent implements OnInit {
 
   }
 
+  onEdit(Productos: Productos){
+    this.servicioService.selectproduct = Object.assign({}, Productos);
+  }
+
+  onDelete($key: string){
+
+  }
+
+
 }

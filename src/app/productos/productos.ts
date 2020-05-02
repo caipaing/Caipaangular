@@ -4,6 +4,7 @@ export class Productos {
     name: string;
     descripcion: string;
     precio: number;
+    unidad: string;
 
 }
 
@@ -12,6 +13,14 @@ export class cotizador{
     producto: string;
     descripcion: string;
     cantidad: number;
+    unidad: string;
     calcular: number;
+}
+
+export class mensajes{
+  $key: string;
+  nombre: string;
+  email: string;
+  mensaje: string;
 }
 
