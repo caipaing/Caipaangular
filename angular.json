@@ -30,6 +30,7 @@
               "node_modules/materialize-css/dist/css/materialize.css",
               "node_modules/bootstrap-icons/package.json",
               "node_modules/angular-bootstrap-md/package.json"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -47,7 +48,8 @@
               ],
               "_requiredBy": [
                 "node_modules/mdbootstrap@4.16.0",
-                "node_modules/angular-bootstrap-md/package.json"
+                "node_modules/angular-bootstrap-md/package.json",
+                "node_modules/bootstrap-icons/package.json"
               ],
               "optimization": true,
               "outputHashing": "all",
