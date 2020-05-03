@@ -1,0 +1,74 @@
+
+.bgcrj45 {
+  /* The image used */
+  background-image: url("src/assets/images/conector_rj45.jpg");
+
+  /* Half height */
+  height: 200px;
+  width: 150px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bgjrj45 {
+  /* The image used */
+  background-image: url("src/assets/images/jackrj45.jpg");
+
+  /* Half height */
+  height: 200px;
+  width: 150px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bgrkdt {
+  /* The image used */
+  background-image: url("src/assets/images/rack.jpg");
+
+  /* Half height */
+  height: 200px;
+  width: 150px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bgpcrt {
+  /* The image used */
+  background-image: url("src/assets/images/patchcord.jpg");
+
+  /* Half height */
+  height: 200px;
+  width: 150px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bgcbes {
+  /* The image used */
+  background-image: url("src/assets/images/cable-estructurado.jpg");
+
+  /* Half height */
+  height: 200px;
+  width: 150px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
