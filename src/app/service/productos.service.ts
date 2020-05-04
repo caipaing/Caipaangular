@@ -29,6 +29,7 @@ export class ProductosService {
         name: Product.name,
         descripcion: Product.descripcion,
         precio: Product.precio,
+        unidad: Product.unidad
       });
     }
 
@@ -36,7 +37,9 @@ export class ProductosService {
       this.productlist.update (Product.$key,{
         name: Product.name,
         description: Product.descripcion,
-        precio: Product.precio
+        precio: Product.precio,
+        unidad: Product.unidad,
+        cantidad: Product.cantidad
       });
     }
 
@@ -59,6 +62,7 @@ export class ProductosService {
       descripcion: cotiza.descripcion,
       cantidad: cotiza.cantidad,
       calcular: cotiza.calcular,
+      unidad: cotiza.unidad
       });
     }
 

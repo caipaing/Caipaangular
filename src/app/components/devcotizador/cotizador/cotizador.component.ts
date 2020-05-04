@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { cotizador } from 'src/app/productos/productos';
+import { cotizador, Productos } from 'src/app/productos/productos';
 import { ProductosComponent } from 'src/app/components/devproductos/productos/productos.component'
 import { ProductosService } from 'src/app/service/productos.service';
 import { from } from 'rxjs';
+import { __values } from 'tslib';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { from } from 'rxjs';
 export class CotizadorComponent implements OnInit {
 
   productform: ProductosComponent;
+  Productos: Productos[];
 
   constructor(public ServicioService: ProductosService) { }
 
@@ -23,7 +25,7 @@ export class CotizadorComponent implements OnInit {
   }
 
   onSubmit(cotizaForm: NgForm) {
-    if (this.productform.ngOnInit == null)
+    if (this.productform.ngOnInit() == null)
     this.ServicioService.insertCotizador(cotizaForm.value);
     this.resetForm(cotizaForm);
   }
@@ -34,10 +36,11 @@ export class CotizadorComponent implements OnInit {
     }
   }
   cacularForm(cotizaForm: NgForm) {
-    precio: this.ServicioService.getProduct();
-    cantidad: this.ngOnInit();
+    var precio= this.ServicioService.selectproduct.precio;
+    var name = this.ServicioService.selectproduct.$key;
+    var cantidad= this.ServicioService.selectcotizar.cantidad;
     if (cotizaForm != null) {
-      //result: $precio * cantidad;
+    var result = precio * cantidad;
     }
   }
 

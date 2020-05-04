@@ -1,4 +1,4 @@
-
+/*imagen para conectores rj45*/
 .bgcrj45 {
   /* The image used */
   background-image: url("src/assets/images/conector_rj45.jpg");
@@ -13,7 +13,7 @@
   background-size: cover;
 }
 
-
+/*imagen para conectores jack rj45*/
 .bgjrj45 {
   /* The image used */
   background-image: url("src/assets/images/jackrj45.jpg");
@@ -28,7 +28,7 @@
   background-size: cover;
 }
 
-
+/*imagen para conectores rack de datos*/
 .bgrkdt {
   /* The image used */
   background-image: url("src/assets/images/rack.jpg");
@@ -43,7 +43,7 @@
   background-size: cover;
 }
 
-
+/*imagen para conectores patchcord*/
 .bgpcrt {
   /* The image used */
   background-image: url("src/assets/images/patchcord.jpg");
@@ -58,7 +58,7 @@
   background-size: cover;
 }
 
-
+/*imagen para conectores cableado estructurado*/
 .bgcbes {
   /* The image used */
   background-image: url("src/assets/images/cable-estructurado.jpg");

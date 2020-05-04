@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  firebase: {
+ /* firebase: {
 
 
     apiKey: "AIzaSyCsnv4rIi4RhPCsiPKsy0EodAU3qEXo0uU",
@@ -15,7 +15,18 @@ export const environment = {
     messagingSenderId: "898288974042",
     appId: "1:898288974042:web:fb95b2502f40119b96cde3",
     measurementId: "G-H3KX1X9NXD"
+}*/
+firebase: {
+  apiKey: "AIzaSyCsnv4rIi4RhPCsiPKsy0EodAU3qEXo0uU",
+  authDomain: "caipaing.firebaseapp.com",
+  databaseURL: "https://caipaing.firebaseio.com",
+  projectId: "caipaing",
+  storageBucket: "caipaing.appspot.com",
+  messagingSenderId: "898288974042",
+  appId: "1:898288974042:web:fb95b2502f40119b96cde3",
+  measurementId: "G-H3KX1X9NXD"
 }
+
 };
 
 /*

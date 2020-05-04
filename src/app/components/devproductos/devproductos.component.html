@@ -3,11 +3,12 @@
   <div class="table ">
  <table class="table table-sm table-hover">
     <thead>
-        <tr>
+        <tr class="blue text-white">
             <th scope="col">nombre</th>
             <th scope="col">descripcion</th>
             <th scope="col">precio</th>
-
+            <th scope="col">unidad</th>
+            <th scope="col">cantidad</th>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +16,8 @@
           <td>{{Productos.name}}</td>
           <td>{{Productos.descripcion}}</td>
           <td>{{Productos.precio}}</td>
+          <td>{{Productos.unidad}}</td>
+          <td>{{Productos.cantidad}}</td>
 <a class="btn btn-secondary text-white" (click)="onEdit(Productos)">
   <i class="fa fa-edit" aria-hidden="true"></i>
 </a>
